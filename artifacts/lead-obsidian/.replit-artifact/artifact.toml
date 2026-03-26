@@ -1,0 +1,31 @@
+kind = "web"
+previewPath = "/"
+title = "LeadObsidian - Social to Sales Pipeline"
+version = "1.0.0"
+id = "artifacts/lead-obsidian"
+router = "path"
+
+[[integratedSkills]]
+name = "react-vite"
+version = "1.0.0"
+
+[[services]]
+name = "web"
+paths = [ "/" ]
+localPort = 21209
+
+[services.development]
+run = "pnpm --filter @workspace/lead-obsidian run dev"
+
+[services.production]
+build = [ "pnpm", "--filter", "@workspace/lead-obsidian", "run", "build" ]
+publicDir = "artifacts/lead-obsidian/dist/public"
+serve = "static"
+
+[[services.production.rewrites]]
+from = "/*"
+to = "/index.html"
+
+[services.env]
+PORT = "21209"
+BASE_PATH = "/"

@@ -1,0 +1,6 @@
+packages:
+  "framer-motion": "For smooth scroll and staggered entry animations for premium marketing site feel"
+  "react-hook-form": "For form state management on the Contact/Demo page"
+  "@hookform/resolvers": "For Zod schema validation with react-hook-form"
+  "zod": "For strict schema validation of the Demo form"
+  "lucide-react": "For beautiful vector icons across all marketing pages"

@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>LeadObsidian AI | Turn Social Proof into Sales Pipe</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Manrope:wght@700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "on-primary-fixed-variant": "#003fa4",
+              "on-secondary": "#213145",
+              "inverse-primary": "#0054d6",
+              "surface-container-highest": "#2d3449",
+              "surface": "#0b1326",
+              "on-surface-variant": "#c3c5d9",
+              "on-tertiary-container": "#ffddd5",
+              "surface-container-low": "#131b2e",
+              "primary-fixed-dim": "#b3c5ff",
+              "surface-container": "#171f33",
+              "on-error": "#690005",
+              "on-secondary-container": "#a9bad3",
+              "error-container": "#93000a",
+              "on-tertiary": "#611300",
+              "outline-variant": "#434656",
+              "on-primary": "#002b75",
+              "inverse-on-surface": "#283044",
+              "on-primary-container": "#dee4ff",
+              "primary-fixed": "#dae1ff",
+              "on-secondary-fixed-variant": "#38485d",
+              "on-error-container": "#ffdad6",
+              "on-background": "#dae2fd",
+              "surface-container-lowest": "#060e20",
+              "secondary": "#b7c8e1",
+              "tertiary-container": "#bf3003",
+              "tertiary-fixed": "#ffdbd2",
+              "background": "#0b1326",
+              "surface-container-high": "#222a3d",
+              "outline": "#8d90a2",
+              "error": "#ffb4ab",
+              "secondary-fixed": "#d3e4fe",
+              "inverse-surface": "#dae2fd",
+              "tertiary": "#ffb4a1",
+              "surface-bright": "#31394d",
+              "on-surface": "#dae2fd",
+              "on-primary-fixed": "#001849",
+              "on-tertiary-fixed-variant": "#891e00",
+              "surface-tint": "#b3c5ff",
+              "on-tertiary-fixed": "#3c0800",
+              "primary-container": "#005be6",
+              "secondary-fixed-dim": "#b7c8e1",
+              "tertiary-fixed-dim": "#ffb4a1",
+              "on-secondary-fixed": "#0b1c30",
+              "secondary-container": "#3a4a5f",
+              "primary": "#b3c5ff",
+              "surface-variant": "#2d3449",
+              "surface-dim": "#0b1326"
+            },
+            fontFamily: {
+              "headline": ["Manrope"],
+              "body": ["Inter"],
+              "label": ["Inter"]
+            },
+            borderRadius: {"DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem"},
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body { font-family: 'Inter', sans-serif; }
+        h1, h2, h3 { font-family: 'Manrope', sans-serif; }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-surface text-on-surface antialiased selection:bg-primary-container selection:text-on-primary-container">
+<!-- TopAppBar -->
+<header class="fixed top-0 w-full z-50 bg-[#0b1326]/70 backdrop-blur-xl">
+<nav class="flex justify-between items-center max-w-7xl mx-auto px-8 py-4">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[#b3c5ff] text-2xl" data-icon="api">api</span>
+<span class="text-2xl font-extrabold tracking-tighter text-[#b3c5ff] font-['Manrope']">LeadObsidian</span>
+</div>
+<div class="hidden md:flex items-center gap-8">
+<a class="text-[#b3c5ff] font-semibold border-b-2 border-[#b3c5ff] pb-1 font-['Inter'] text-sm tracking-wide" href="#">Product</a>
+<a class="text-slate-400 hover:text-slate-100 transition-colors font-['Inter'] text-sm tracking-wide" href="#">Features</a>
+<a class="text-slate-400 hover:text-slate-100 transition-colors font-['Inter'] text-sm tracking-wide" href="#">Pricing</a>
+</div>
+<button class="bg-gradient-to-br from-primary to-primary-container text-on-primary px-6 py-2.5 rounded-xl font-semibold text-sm transition-all duration-300 hover:scale-105 active:scale-95">
+                Get Started
+            </button>
+</nav>
+</header>
+<main>
+<!-- Hero Section -->
+<section class="relative pt-40 pb-24 overflow-hidden">
+<div class="max-w-7xl mx-auto px-8 grid lg:grid-cols-2 gap-16 items-center">
+<div class="z-10">
+<span class="inline-block px-4 py-1.5 rounded-full bg-secondary-container/30 text-primary text-xs font-bold tracking-[0.1em] uppercase mb-6">
+                        AI-Powered Prospecting
+                    </span>
+<h1 class="text-6xl md:text-7xl font-extrabold tracking-tight leading-[1.1] text-on-surface mb-8">
+                        Turn Social Proof <br/>
+<span class="text-transparent bg-clip-text bg-gradient-to-r from-primary to-primary-container">into Sales Pipe</span>
+</h1>
+<p class="text-lg text-on-surface-variant leading-relaxed mb-10 max-w-lg">
+                        Instantly capture high-intent prospects from LinkedIn, Telegram, and Twitter. Enrich data automatically and launch high-conversion outreach in seconds.
+                    </p>
+<div class="flex flex-wrap gap-4">
+<button class="bg-gradient-to-br from-primary to-primary-container text-on-primary px-8 py-4 rounded-xl font-bold flex items-center gap-2 hover:opacity-90 transition-opacity">
+                            Start Free Trial
+                            <span class="material-symbols-outlined" data-icon="arrow_forward">arrow_forward</span>
+</button>
+<button class="bg-surface-container-high text-on-surface px-8 py-4 rounded-xl font-bold hover:bg-surface-bright transition-colors">
+                            Book a Demo
+                        </button>
+</div>
+</div>
+<div class="relative">
+<!-- Glassmorphism Capture Mockup -->
+<div class="bg-surface-container-low rounded-2xl border border-outline-variant/15 p-6 shadow-2xl relative overflow-hidden group">
+<div class="flex items-center justify-between mb-8">
+<div class="flex items-center gap-3">
+<div class="w-3 h-3 rounded-full bg-red-500/50"></div>
+<div class="w-3 h-3 rounded-full bg-yellow-500/50"></div>
+<div class="w-3 h-3 rounded-full bg-green-500/50"></div>
+</div>
+<div class="px-3 py-1 bg-surface-container-highest rounded-lg text-[10px] text-on-surface-variant font-mono">
+                                app.leadobsidian.ai/capture
+                            </div>
+</div>
+<!-- Animated Capture Stream -->
+<div class="space-y-4">
+<div class="p-4 bg-surface-container-high rounded-xl border-l-4 border-tertiary flex items-center justify-between animate-pulse">
+<div class="flex items-center gap-4">
+<div class="w-10 h-10 rounded-full bg-surface-container-highest overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="Professional profile headshot for sales lead" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB_qPNK7HzYweqSsssUbF9xPKSdHFHVRMWPHPFkBJ7WB6vcgXUIoNGlLakrxpORnNMbV8oi3TDdxSvwoaiJdw5sUzN3GlNqtiw4qrEx85fHvxAuWstdn89bmuRSzIJlnPblrMWD3pNOEVuN3cwzYnk1Pkcx2XTmP6WUw1yWIIVpAS-CoDN9p9CaXxj2nhVB8LICVXgr19NlAyulX1_ggQPrs33jx_0AAVd9cQdjFYUfj9DKYBojJabw4JOo0NMeKETXYxe-PSK9FT-X"/>
+</div>
+<div>
+<div class="text-sm font-bold">Alex Rivera</div>
+<div class="text-[10px] text-on-surface-variant">CTO @ NexaFlow • Active on LinkedIn</div>
+</div>
+</div>
+<span class="material-symbols-outlined text-primary text-xl" data-icon="check_circle" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+</div>
+<div class="p-4 bg-surface-container-high/60 rounded-xl border-l-4 border-primary flex items-center justify-between opacity-80">
+<div class="flex items-center gap-4">
+<div class="w-10 h-10 rounded-full bg-surface-container-highest overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="Woman executive avatar for lead list" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBXSRY3CY11Db6Azbh9tx7LH-CjoOklNVBIR11XV4PwCfL3kBgHW2NZ2lyxylupDQjg8MH-eIKZI13HdG-A0oY6NRgQO1cXLG4xfd3CCz8R9S67_06EId1EVVHDifepYxlSTTjOI1iQIbEfAR1kDUGm-wiFZX5g4ZUJD6n_FEzn7cMbSpDTKv9qye4p9ut37I-70VFuhEzZ-A7oamAPX9-xFzso8aEyliVYu5Jf0QVpls8saDw2KQE2pTVlyyPK4TPTJnEYh8jxBwAn"/>
+</div>
+<div>
+<div class="text-sm font-bold">Sarah Chen</div>
+<div class="text-[10px] text-on-surface-variant">Growth Lead @ Scale • Telegram member</div>
+</div>
+</div>
+<span class="material-symbols-outlined text-primary text-xl" data-icon="add_circle" data-weight="fill" style="font-variation-settings: 'FILL' 1;">add_circle</span>
+</div>
+<div class="p-4 bg-surface-container-high/30 rounded-xl border-l-4 border-outline-variant/30 flex items-center justify-between opacity-50 blur-[1px]">
+<div class="flex items-center gap-4">
+<div class="w-10 h-10 rounded-full bg-surface-container-highest"></div>
+<div>
+<div class="h-3 w-24 bg-surface-container-highest rounded mb-1"></div>
+<div class="h-2 w-16 bg-surface-container-highest rounded"></div>
+</div>
+</div>
+</div>
+</div>
+<!-- Gradient Overlay for Hero Graphic -->
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-low via-transparent to-transparent pointer-events-none"></div>
+</div>
+<!-- Decorative Elements -->
+<div class="absolute -top-12 -right-12 w-64 h-64 bg-primary/20 blur-[100px] rounded-full -z-10"></div>
+<div class="absolute -bottom-12 -left-12 w-48 h-48 bg-tertiary/10 blur-[80px] rounded-full -z-10"></div>
+</div>
+</div>
+</section>
+<!-- Capabilities Section (Bento Grid) -->
+<section class="py-24 bg-surface-container-low">
+<div class="max-w-7xl mx-auto px-8">
+<div class="flex flex-col md:flex-row justify-between items-end gap-6 mb-16">
+<div class="max-w-xl">
+<h2 class="text-4xl font-bold tracking-tight mb-4">One Click to Pipeline</h2>
+<p class="text-on-surface-variant">Stop manually scraping profiles. LeadObsidian bridges the gap between social signals and CRM data in real-time.</p>
+</div>
+<div class="flex gap-4">
+<div class="w-12 h-12 rounded-lg bg-surface-container-high flex items-center justify-center border border-outline-variant/10">
+<span class="material-symbols-outlined text-primary" data-icon="share">share</span>
+</div>
+<div class="w-12 h-12 rounded-lg bg-surface-container-high flex items-center justify-center border border-outline-variant/10">
+<span class="material-symbols-outlined text-primary" data-icon="dataset">dataset</span>
+</div>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+<!-- LinkedIn Card -->
+<div class="md:col-span-2 bg-surface-container-high p-8 rounded-2xl group hover:bg-surface-bright transition-colors">
+<div class="flex items-start justify-between mb-12">
+<div>
+<h3 class="text-2xl font-bold mb-2">LinkedIn Connector</h3>
+<p class="text-on-surface-variant max-w-sm">Capture profiles, posts, and comments. We extract emails and intent signals directly from the professional network.</p>
+</div>
+<span class="material-symbols-outlined text-4xl text-[#0077B5]" data-icon="hub">hub</span>
+</div>
+<div class="grid grid-cols-3 gap-4">
+<div class="h-24 bg-surface-container-lowest rounded-xl flex items-center justify-center border border-outline-variant/5">
+<span class="text-[10px] font-bold tracking-widest text-on-surface-variant uppercase">Profiles</span>
+</div>
+<div class="h-24 bg-surface-container-lowest rounded-xl flex items-center justify-center border border-outline-variant/5">
+<span class="text-[10px] font-bold tracking-widest text-on-surface-variant uppercase">Groups</span>
+</div>
+<div class="h-24 bg-surface-container-lowest rounded-xl flex items-center justify-center border border-outline-variant/5">
+<span class="text-[10px] font-bold tracking-widest text-on-surface-variant uppercase">Events</span>
+</div>
+</div>
+</div>
+<!-- Telegram Card -->
+<div class="bg-surface-container-high p-8 rounded-2xl flex flex-col justify-between border-l-4 border-primary">
+<div>
+<span class="material-symbols-outlined text-4xl text-primary mb-6" data-icon="send">send</span>
+<h3 class="text-2xl font-bold mb-2">Telegram Insights</h3>
+<p class="text-on-surface-variant text-sm">Monitor industry groups and automatically flag potential leads talking about your problem space.</p>
+</div>
+<div class="mt-8 pt-8 border-t border-outline-variant/10">
+<div class="flex items-center gap-2 text-primary font-bold text-sm">
+                                View Integration <span class="material-symbols-outlined text-sm" data-icon="north_east">north_east</span>
+</div>
+</div>
+</div>
+<!-- Enrichment Card -->
+<div class="bg-surface-container-high p-8 rounded-2xl">
+<span class="material-symbols-outlined text-4xl text-tertiary mb-6" data-icon="magic_button">magic_button</span>
+<h3 class="text-2xl font-bold mb-2">Auto-Enrich</h3>
+<p class="text-on-surface-variant text-sm">Don't settle for just a name. We pull company revenue, tech stack, and verified work emails automatically.</p>
+</div>
+<!-- Export Card -->
+<div class="md:col-span-2 bg-gradient-to-br from-primary-container to-surface-container-high p-8 rounded-2xl flex items-center gap-8 overflow-hidden">
+<div class="flex-1">
+<h3 class="text-2xl font-bold mb-2">Sync Everywhere</h3>
+<p class="text-on-primary-container/80 text-sm">Native integrations with Salesforce, HubSpot, and Pipedrive. Keep your CRM fresh without manual entry.</p>
+</div>
+<div class="flex -space-x-4">
+<div class="w-16 h-16 rounded-full bg-surface-container-lowest border-4 border-surface-container-high flex items-center justify-center">
+<span class="material-symbols-outlined text-2xl" data-icon="cloud_sync">cloud_sync</span>
+</div>
+<div class="w-16 h-16 rounded-full bg-surface-container-lowest border-4 border-surface-container-high flex items-center justify-center">
+<span class="material-symbols-outlined text-2xl" data-icon="database">database</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Cold Selling Section (Automation Workflow) -->
+<section class="py-32 relative">
+<div class="max-w-7xl mx-auto px-8">
+<div class="text-center mb-20">
+<h2 class="text-5xl font-extrabold mb-6">Master the Outreach Flow</h2>
+<p class="text-on-surface-variant max-w-2xl mx-auto">Set it and forget it. Our visual builder lets you create complex multi-channel sequences that feel human.</p>
+</div>
+<div class="bg-surface-container-lowest p-8 md:p-12 rounded-3xl border border-outline-variant/10 relative">
+<!-- Sequence Visualization -->
+<div class="flex flex-col md:flex-row items-center gap-12 relative">
+<!-- Step 1 -->
+<div class="flex-1 w-full">
+<div class="p-6 bg-surface-container rounded-2xl border border-outline-variant/10 group hover:border-primary transition-colors">
+<div class="flex items-center gap-4 mb-4">
+<div class="w-8 h-8 rounded bg-primary/20 text-primary flex items-center justify-center font-bold text-xs">01</div>
+<span class="font-bold text-sm">Trigger: New Social Lead</span>
+</div>
+<div class="text-xs text-on-surface-variant leading-relaxed">
+                                    When a lead is captured from <span class="text-primary">LinkedIn Sales Navigator</span>...
+                                </div>
+</div>
+</div>
+<span class="material-symbols-outlined text-outline-variant hidden md:block" data-icon="trending_flat">trending_flat</span>
+<span class="material-symbols-outlined text-outline-variant md:hidden" data-icon="arrow_downward">arrow_downward</span>
+<!-- Step 2 -->
+<div class="flex-1 w-full">
+<div class="p-6 bg-surface-container rounded-2xl border border-outline-variant/10 group hover:border-primary transition-colors">
+<div class="flex items-center gap-4 mb-4">
+<div class="w-8 h-8 rounded bg-primary/20 text-primary flex items-center justify-center font-bold text-xs">02</div>
+<span class="font-bold text-sm">Action: Email Enrichment</span>
+</div>
+<div class="flex items-center gap-2">
+<div class="h-1.5 flex-1 bg-surface-container-highest rounded-full overflow-hidden">
+<div class="h-full bg-primary w-2/3"></div>
+</div>
+<span class="text-[10px] text-primary font-bold">Verifying...</span>
+</div>
+</div>
+</div>
+<span class="material-symbols-outlined text-outline-variant hidden md:block" data-icon="trending_flat">trending_flat</span>
+<span class="material-symbols-outlined text-outline-variant md:hidden" data-icon="arrow_downward">arrow_downward</span>
+<!-- Step 3 -->
+<div class="flex-1 w-full">
+<div class="p-6 bg-surface-container-high rounded-2xl border border-primary/50 shadow-[0_0_20px_rgba(179,197,255,0.1)]">
+<div class="flex items-center gap-4 mb-4">
+<div class="w-8 h-8 rounded bg-primary text-on-primary flex items-center justify-center font-bold text-xs">03</div>
+<span class="font-bold text-sm">Action: AI Outreach</span>
+</div>
+<div class="bg-surface-container-lowest p-3 rounded-lg text-[10px] italic text-on-surface-variant font-mono">
+                                    "Hi {{first_name}}, loved your recent post about {{topic}}..."
+                                </div>
+</div>
+</div>
+</div>
+<!-- Floating Performance Metric -->
+<div class="absolute -bottom-6 -right-6 md:right-12 bg-surface-bright p-4 rounded-xl shadow-xl border border-outline-variant/20 flex items-center gap-4">
+<div class="bg-green-500/20 p-2 rounded-lg">
+<span class="material-symbols-outlined text-green-500" data-icon="bolt" data-weight="fill" style="font-variation-settings: 'FILL' 1;">bolt</span>
+</div>
+<div>
+<div class="text-[10px] text-on-surface-variant uppercase font-bold tracking-wider">Conversion Lift</div>
+<div class="text-xl font-bold">+24% vs Manual</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Pricing / Final CTA Section -->
+<section class="py-32 bg-surface-container">
+<div class="max-w-7xl mx-auto px-8">
+<div class="bg-gradient-to-br from-[#131b2e] to-[#0b1326] rounded-[2.5rem] p-12 md:p-24 text-center border border-outline-variant/10 overflow-hidden relative">
+<!-- Abstract Background Pattern -->
+<div class="absolute inset-0 opacity-10 pointer-events-none">
+<svg height="100%" preserveaspectratio="none" viewbox="0 0 100 100" width="100%">
+<defs>
+<pattern height="10" id="grid" patternunits="userSpaceOnUse" width="10">
+<path d="M 10 0 L 0 0 0 10" fill="none" stroke="white" stroke-width="0.5"></path>
+</pattern>
+</defs>
+<rect fill="url(#grid)" height="100%" width="100%"></rect>
+</svg>
+</div>
+<div class="relative z-10">
+<h2 class="text-4xl md:text-6xl font-extrabold mb-8 max-w-3xl mx-auto leading-tight">Ready to Fill Your Pipeline with Obsidian?</h2>
+<p class="text-on-surface-variant text-lg mb-12 max-w-xl mx-auto">Join 500+ high-performance sales teams turning social activity into predictable revenue.</p>
+<div class="flex flex-col md:flex-row items-center justify-center gap-6">
+<div class="bg-surface-container-lowest p-8 rounded-3xl text-left border border-outline-variant/20 w-full max-w-sm">
+<div class="text-sm font-bold text-primary mb-2 uppercase tracking-widest">Growth Plan</div>
+<div class="flex items-baseline gap-1 mb-6">
+<span class="text-4xl font-extrabold">$149</span>
+<span class="text-on-surface-variant text-sm">/mo</span>
+</div>
+<ul class="space-y-4 mb-8">
+<li class="flex items-center gap-2 text-sm">
+<span class="material-symbols-outlined text-primary text-lg" data-icon="check">check</span>
+                                        2,000 Captures / month
+                                    </li>
+<li class="flex items-center gap-2 text-sm">
+<span class="material-symbols-outlined text-primary text-lg" data-icon="check">check</span>
+                                        Unlimited Automation Flows
+                                    </li>
+<li class="flex items-center gap-2 text-sm">
+<span class="material-symbols-outlined text-primary text-lg" data-icon="check">check</span>
+                                        CRM Syncing
+                                    </li>
+</ul>
+<button class="w-full py-4 rounded-xl bg-primary text-on-primary font-bold hover:opacity-90 transition-opacity">
+                                    Get Started
+                                </button>
+</div>
+<div class="w-full max-w-xs text-left">
+<h4 class="font-bold text-xl mb-4">Enterprise Custom</h4>
+<p class="text-on-surface-variant text-sm mb-6">Need more? Custom seats, dedicated account managers, and white-label options available.</p>
+<a class="text-primary font-bold flex items-center gap-2 group" href="#">
+                                    Talk to Sales 
+                                    <span class="material-symbols-outlined group-hover:translate-x-1 transition-transform" data-icon="arrow_forward">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-[#060e20] w-full py-12 px-8">
+<div class="grid grid-cols-2 md:grid-cols-5 gap-8 max-w-7xl mx-auto">
+<div class="col-span-2">
+<div class="flex items-center gap-2 mb-6">
+<span class="material-symbols-outlined text-[#b3c5ff] text-xl" data-icon="api">api</span>
+<span class="text-lg font-bold text-[#b3c5ff]">LeadObsidian AI</span>
+</div>
+<p class="text-slate-500 text-sm max-w-xs font-['Inter'] leading-relaxed">
+                    The architectural intelligence for modern sales teams. Carved for precision, built for scale.
+                </p>
+</div>
+<div>
+<h4 class="text-on-surface font-bold text-xs uppercase tracking-widest mb-6">Product</h4>
+<ul class="space-y-4">
+<li><a class="text-slate-500 hover:text-[#b3c5ff] transition-colors text-sm font-['Inter']" href="#">Features</a></li>
+<li><a class="text-slate-500 hover:text-[#b3c5ff] transition-colors text-sm font-['Inter']" href="#">Integrations</a></li>
+<li><a class="text-slate-500 hover:text-[#b3c5ff] transition-colors text-sm font-['Inter']" href="#">Pricing</a></li>
+</ul>
+</div>
+<div>
+<h4 class="text-on-surface font-bold text-xs uppercase tracking-widest mb-6">Resources</h4>
+<ul class="space-y-4">
+<li><a class="text-slate-500 hover:text-[#b3c5ff] transition-colors text-sm font-['Inter']" href="#">Documentation</a></li>
+<li><a class="text-slate-500 hover:text-[#b3c5ff] transition-colors text-sm font-['Inter']" href="#">API Reference</a></li>
+<li><a class="text-slate-500 hover:text-[#b3c5ff] transition-colors text-sm font-['Inter']" href="#">Blog</a></li>
+</ul>
+</div>
+<div>
+<h4 class="text-on-surface font-bold text-xs uppercase tracking-widest mb-6">Legal</h4>
+<ul class="space-y-4">
+<li><a class="text-slate-500 hover:text-[#b3c5ff] transition-colors text-sm font-['Inter']" href="#">Privacy</a></li>
+<li><a class="text-slate-500 hover:text-[#b3c5ff] transition-colors text-sm font-['Inter']" href="#">Terms</a></li>
+</ul>
+</div>
+</div>
+<div class="max-w-7xl mx-auto pt-12 mt-12 border-t border-slate-800/50 flex flex-col md:flex-row justify-between items-center gap-4">
+<p class="text-slate-500 text-xs font-['Inter']">© 2024 LeadObsidian AI. All rights reserved.</p>
+<div class="flex gap-6">
+<span class="material-symbols-outlined text-slate-500 cursor-pointer hover:text-primary transition-colors" data-icon="public">public</span>
+<span class="material-symbols-outlined text-slate-500 cursor-pointer hover:text-primary transition-colors" data-icon="alternate_email">alternate_email</span>
+</div>
+</div>
+</footer>
+</body></html>
