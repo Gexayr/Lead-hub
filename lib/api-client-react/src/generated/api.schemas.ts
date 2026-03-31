@@ -8,3 +8,33 @@
 export interface HealthStatus {
   status: string;
 }
+
+export interface CreateLeadRequest {
+  /** @minLength 2 */
+  firstName: string;
+  /** @minLength 2 */
+  lastName: string;
+  email: string;
+  /** @minLength 2 */
+  company: string;
+  phone?: string | null;
+  message?: string | null;
+}
+
+export interface LeadResponse {
+  id: number;
+  firstName: string;
+  lastName: string;
+  email: string;
+  company: string;
+  phone?: string | null;
+  message?: string | null;
+  createdAt: string;
+}
+
+export type ErrorResponseDetails = { [key: string]: unknown };
+
+export interface ErrorResponse {
+  error: string;
+  details?: ErrorResponseDetails;
+}

@@ -15,15 +15,18 @@ export type DemoFormInput = z.infer<typeof demoFormSchema>;
 export function useSubmitDemo() {
   return useMutation({
     mutationFn: async (data: DemoFormInput) => {
-      // Simulate an API call to submit the demo request
-      await new Promise((resolve) => setTimeout(resolve, 1200));
-      
-      // In a real app, you would make a fetch call here:
-      // const res = await fetch('/api/demo', { method: 'POST', body: JSON.stringify(data) });
-      // if (!res.ok) throw new Error("Failed to submit");
-      // return res.json();
-      
-      return { success: true, message: "Demo requested successfully" };
-    }
+      const res = await fetch(`${import.meta.env.BASE_URL}api/leads`, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(data),
+      });
+
+      if (!res.ok) {
+        const err = await res.json().catch(() => ({ error: "Request failed" }));
+        throw new Error(err.error ?? "Failed to submit demo request");
+      }
+
+      return res.json();
+    },
   });
 }

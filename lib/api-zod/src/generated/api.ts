@@ -14,3 +14,36 @@ import * as zod from "zod";
 export const HealthCheckResponse = zod.object({
   status: zod.string(),
 });
+
+/**
+ * @summary Submit a demo / lead request
+ */
+export const submitLeadBodyFirstNameMin = 2;
+
+export const submitLeadBodyLastNameMin = 2;
+
+export const submitLeadBodyCompanyMin = 2;
+
+export const SubmitLeadBody = zod.object({
+  firstName: zod.string().min(submitLeadBodyFirstNameMin),
+  lastName: zod.string().min(submitLeadBodyLastNameMin),
+  email: zod.string().email(),
+  company: zod.string().min(submitLeadBodyCompanyMin),
+  phone: zod.string().nullish(),
+  message: zod.string().nullish(),
+});
+
+/**
+ * @summary List all leads
+ */
+export const ListLeadsResponseItem = zod.object({
+  id: zod.number(),
+  firstName: zod.string(),
+  lastName: zod.string(),
+  email: zod.string(),
+  company: zod.string(),
+  phone: zod.string().nullish(),
+  message: zod.string().nullish(),
+  createdAt: zod.date(),
+});
+export const ListLeadsResponse = zod.array(ListLeadsResponseItem);

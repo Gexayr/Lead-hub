@@ -1,0 +1,38 @@
+services:
+  db:
+    image: postgres:16-alpine
+    restart: unless-stopped
+    env_file: .env
+    environment:
+      POSTGRES_USER: ${POSTGRES_USER:-leadobsidian}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-leadobsidian}
+      POSTGRES_DB: ${POSTGRES_DB:-leadobsidian}
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U ${POSTGRES_USER:-leadobsidian}"]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    restart: unless-stopped
+    env_file: .env
+    ports:
+      - "${APP_PORT:-3000}:8080"
+    environment:
+      NODE_ENV: production
+      PORT: 8080
+      DATABASE_URL: >-
+        postgresql://${POSTGRES_USER:-leadobsidian}:${POSTGRES_PASSWORD:-leadobsidian}@db:5432/${POSTGRES_DB:-leadobsidian}
+      TG_BOT_TOKEN: ${TG_BOT_TOKEN}
+      TG_CHAT_ID: ${TG_CHAT_ID}
+    depends_on:
+      db:
+        condition: service_healthy
+
+volumes:
+  postgres_data:
